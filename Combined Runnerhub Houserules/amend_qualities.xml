@@ -116,13 +116,7 @@
     </quality>
     <quality>
       <name>'Ware Intolerance</name>
-      <required>
-        <allof xpathfilter="quality = 'Technomancer'" amendoperation="remove" />
-        <oneof>
-          <quality xpathfilter=". = 'Technomancer'" amendoperation="remove" />
-        </oneof>
-      </required>
-    </quality>
+      <hide />
     <quality>
       <name>Wired User</name>
       <required>
