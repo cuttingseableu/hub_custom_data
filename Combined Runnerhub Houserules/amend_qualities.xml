@@ -117,6 +117,7 @@
     <quality>
       <name>'Ware Intolerance</name>
       <hide />
+	</quality>
     <quality>
       <name>Wired User</name>
       <required>
@@ -128,3 +129,4 @@
     </quality>
 	</qualities>
 </chummer>
+
