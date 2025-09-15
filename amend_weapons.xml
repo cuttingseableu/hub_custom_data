@@ -38,5 +38,20 @@
 			<category>Cyberweapon</category>
 		</weapon>		
 	</weapons>
+    <accessories>
+        <accessory>
+            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id> <!-- suppressors on shotguns -->
+            <forbidden>
+                <weapondetails>
+                <OR>
+                    <ammocategory amendoperation="remove">Shotguns</ammocategory>
+                    <category amendoperation="remove">Shotguns</category>
+                    <spec amendoperation="remove">Shotguns</spec>
+                    <spec2 amendoperation="remove">Shotguns</spec2>
+                </OR>
+                </weapondetails>
+            </forbidden>
+        </accessory>
+    </accessories>
 </chummer>
 
