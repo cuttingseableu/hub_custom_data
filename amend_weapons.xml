@@ -77,6 +77,17 @@
                     </OR>
                     </weapondetails>
                 </forbidden>
+                <required amendoperation="addnode">
+                    <weapondetails>
+                        <OR>
+                            <category operation="contains">Rifles</category>
+                            <category operation="contains">Pistols</category>
+                            <category>Shotguns</category>
+                            <category operation="contains">Machine Guns</category>
+                            <category>Carbines</category>
+                        </OR>
+                    </weapondetails>
+                </required>
             </accessory>
         </accessories>
 </chummer>
