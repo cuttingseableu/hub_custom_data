@@ -63,6 +63,20 @@
             <accessory>
                 <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> <!--  Long Barrel modification takes up no slots -->
                 <mount amendoperation="replace"></mount>
+                <forbidden amendoperation="addnode">
+                    <oneof>
+                    <accessory>Sawed Off/Shortbarrel</accessory>
+                    <accessory>Sawed Off/Shortbarrel and Stock Removal</accessory>
+                    </oneof>
+                    <weapondetails>
+                    <OR> <!-- Shouldn't be needed but missing from weapons.xml currently -->
+                        <name>HK Urban Combat</name>
+                        <name>HK Urban Enforcer</name>
+                        <name>HK Urban Fighter</name>
+                        <name>HK Urban Assassin</name>
+                    </OR>
+                    </weapondetails>
+                </forbidden>
             </accessory>
         </accessories>
 </chummer>
