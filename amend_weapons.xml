@@ -57,8 +57,12 @@
                 <mount amendoperation="replace">Internal</mount>
             </accessory>
             <accessory>
-                <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id> <!-- Ammo Skip System takes only an internal slot. -->
+                <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id> <!-- Ammo Skip System takes only an Internal slot -->
                 <mount amendoperation="replace">Internal</mount>
+            </accessory>
+            <accessory>
+                <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> <!--  Long Barrel modification takes up no slots -->
+                <mount amendoperation="replace"></mount>
             </accessory>
         </accessories>
 </chummer>
