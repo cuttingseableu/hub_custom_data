@@ -53,9 +53,13 @@
             </forbidden>
         </accessory>
             <accessory>
-                <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id> <!-- Electronic firing uses internal mount -->
+                <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id> <!-- Electronic firing occupies the Internal slot -->
                 <mount amendoperation="replace">Internal</mount>
             </accessory>
-    </accessories>
+            <accessory>
+                <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id> <!-- Ammo Skip System takes only an internal slot. -->
+                <mount amendoperation="replace">Internal</mount>
+            </accessory>
+        </accessories>
 </chummer>
 
