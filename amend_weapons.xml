@@ -39,7 +39,8 @@
 		</weapon>		
 	</weapons>
 
-    <!-- Chummer treats Internal slot as None, so create custom Internal mount and apply to all guns that should have one-->
+    <!-- Chummer treats Internal slot as None, so create custom Internal mount and apply to all guns that should have one -->
+    <!-- Also apply mod slots for Individual Weapons -->
     <weapons> <!-- Weapon Categories -->
         <weapon xpathfilter="category='Tasers'">
             <accessorymounts>		
@@ -299,22 +300,13 @@
 
     <!-- House Rules for accessory slots -->
     <accessories>
-        <accessory>
-            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id> <!-- suppressors on shotguns -->
-            <forbidden>
-                <weapondetails>
-                <OR>
-                    <ammocategory amendoperation="remove">Shotguns</ammocategory>
-                    <category amendoperation="remove">Shotguns</category>
-                    <spec amendoperation="remove">Shotguns</spec>
-                    <spec2 amendoperation="remove">Shotguns</spec2>
-                </OR>
-                </weapondetails>
-            </forbidden>
-        </accessory>
-        <accessory>
-            <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id> <!-- Electronic firing occupies the Internal slot -->
+        <accessory> <!-- Ammo Skip System takes only an Internal slot -->
+            <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id>
             <mount amendoperation="replace">Hub Internal</mount>
+        </accessory>
+        <accessory> <!-- Electronic Firing needs to use Internal slot and can't be used with certain weapons -->
+            <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id>
+            <mount amendoperation="replace">Hub Internal</mount> <!-- Electronic firing occupies the Internal slot -->
             <forbidden>
                 <weapondetails amendoperation="addnode">
                     <OR> <!-- Forbid Individual weapons -->
@@ -341,24 +333,8 @@
                 </weapondetails>
             </forbidden>
         </accessory>
-        <accessory>
-            <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id> <!-- Ammo Skip System takes only an Internal slot -->
-            <mount amendoperation="replace">Hub Internal</mount>
-        </accessory>
-        <accessory>
-            <id>9a27efa9-f3f4-4e47-9165-76e8adbad4ba</id> <!-- Guncam needs to use Hub Internal slot -->
-            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
-        </accessory>
-        <accessory>
-            <id>21bc8b85-3fd7-4bde-ac8d-35e1fa099f21</id> <!-- Improved Range Finder needs to use Hub Internal slot -->
-            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
-        </accessory>
-        <accessory>
-            <id>51740a3d-4464-4a38-8e2e-8858b3c1481e</id> <!-- Safe Target System, Base needs to use Hub Internal slot -->
-            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
-        </accessory>
-        <accessory>
-            <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> <!--  Long Barrel modification takes up no slots -->
+        <accessory> <!--  Long Barrel modification takes up no slots -->
+            <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> 
             <mount amendoperation="replace"></mount>
             <forbidden amendoperation="addnode">
                 <oneof>
@@ -386,6 +362,19 @@
                 </weapondetails>
             </required>
         </accessory>
+        <accessory> <!-- Shotguns may be modified with Suppressors -->
+            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id>
+            <forbidden>
+                <weapondetails>
+                <OR>
+                    <ammocategory amendoperation="remove">Shotguns</ammocategory>
+                    <category amendoperation="remove">Shotguns</category>
+                    <spec amendoperation="remove">Shotguns</spec>
+                    <spec2 amendoperation="remove">Shotguns</spec2>
+                </OR>
+                </weapondetails>
+            </forbidden>
+        </accessory>
         <accessory> <!-- Ban Gyroget Pistol from having Suppressor-->
             <id>0da6149e-982f-4051-825b-52c1b79c7e52</id>
             <forbidden>
@@ -395,6 +384,18 @@
                     </OR>
                 </weapondetails>
             </forbidden>
+        </accessory>
+        <accessory> <!-- Guncam needs to use Hub Internal slot -->
+            <id>9a27efa9-f3f4-4e47-9165-76e8adbad4ba</id>
+            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
+        </accessory>
+        <accessory> <!-- Improved Range Finder needs to use Hub Internal slot -->
+            <id>21bc8b85-3fd7-4bde-ac8d-35e1fa099f21</id>
+            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
+        </accessory>
+        <accessory> <!-- Safe Target System, Base needs to use Hub Internal slot -->
+            <id>51740a3d-4464-4a38-8e2e-8858b3c1481e</id>
+            <mount amendoperation="regexreplace" regexpattern="Internal">Hub Internal</mount>
         </accessory>
     </accessories>
 </chummer>
