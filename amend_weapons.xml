@@ -121,9 +121,41 @@
                 <mount amendoperation="addnode">Hub Internal</mount>
             </accessorymounts>
         </weapon>
-        <weapon xpathfilter="category='Crossbows'">
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+    </weapons>
+    <weapons> <!-- Crossbows -->
+        <weapon> <!-- Light Crossbow -->
+            <id>bc9db3ec-6fa2-407d-ad76-e49daac3c06f</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>		
+                <mount>Hub Internal</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Medium Crossbow -->
+            <id>0df17331-7631-4f78-b857-0f3929678db2</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>		
+                <mount>Hub Internal</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Heavy Crossbow -->
+            <id>db213a06-0430-4711-81a3-5790d5152ba3</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>		
+                <mount>Hub Internal</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Ranger Sliver Pistol Crossbow -->
+            <id>28072a3f-5153-444e-83e3-46129b9ff572</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>		
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
     </weapons>
@@ -194,14 +226,22 @@
         </weapon>
         <weapon> <!-- Aquadyne Shark-XS Harpoon Gun -->
             <id>a20f44a1-ced0-4018-9522-8a0e7234c29d</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>		
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
         <weapon> <!-- Standard Harpoon Gun -->
             <id>d50f0212-490b-44ca-8365-09e62ea69697</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>		
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
         <weapon> <!-- Ares Armatus -->
