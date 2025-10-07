@@ -175,6 +175,7 @@
         <weapon> <!-- FN-AAL Gyrojet Pistol -->
             <id>a836fc0b-a1e1-491d-ad8d-7f803c88acdc</id>
             <accessorymounts>		
+                <mount amendoperation="addnode">Barrel</mount>
                 <mount amendoperation="addnode">Hub Internal</mount>
             </accessorymounts>
         </weapon>
@@ -314,6 +315,31 @@
         <accessory>
             <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id> <!-- Electronic firing occupies the Internal slot -->
             <mount amendoperation="replace">Hub Internal</mount>
+            <forbidden>
+                <weapondetails amendoperation="addnode">
+                    <OR> <!-- Forbid Individual weapons -->
+                        <name>Parashield Dart Pistol</name>
+                        <name>The Ares Redline Laser Pistol</name>
+                        <name>The Narcoject Gas Gun</name>
+                        <name>The Narcoject Trackstopper</name>
+                        <name>Ares Lancer MP Laser</name>
+                        <name>Grapple Gun</name>
+                        <name>Tactical Grapple Gun</name>
+                        <name>Ares S-III Super Squirt</name>
+                        <name>Fichetti Pain Inducer</name>
+                        <name>Aquadyne Shark-XS Harpoon Gun</name>
+                        <name>Standard Harpoon Gun</name>
+                        <name>Ares Armatus</name>
+                        <name>Ares Screech Sonic Rifle</name>
+                        <name>Repeating Laser</name>
+                        <name>Microwave Gun, High Frequency</name>
+                        <name>Microwave Gun, Low Frequency</name>
+                        <name>Parashield Dart Rifle</name>
+                        <name>Ares Archon Heavy MP Laser</name>
+                        <name>Ares Thunderstruck Gauss Rifle</name>
+                    </OR>
+                </weapondetails>
+            </forbidden>
         </accessory>
         <accessory>
             <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id> <!-- Ammo Skip System takes only an Internal slot -->
@@ -359,6 +385,16 @@
                     </OR>
                 </weapondetails>
             </required>
+        </accessory>
+        <accessory> <!-- Ban Gyroget Pistol from having Suppressor-->
+            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id>
+            <forbidden>
+                <weapondetails>
+                    <OR>
+                        <name amendoperation="addnode">FN-AAL Gyrojet Pistol</name>
+                    </OR>
+                </weapondetails>
+            </forbidden>
         </accessory>
     </accessories>
 </chummer>
