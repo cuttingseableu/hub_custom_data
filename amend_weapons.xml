@@ -347,12 +347,12 @@
             <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> 
             <mount amendoperation="replace"></mount>
             <forbidden amendoperation="addnode">
-                <oneof>
+                <oneof> <!-- Forbid Shortbarrel and Stock Removal because they are mutex -->
                 <accessory>Sawed Off/Shortbarrel</accessory>
                 <accessory>Sawed Off/Shortbarrel and Stock Removal</accessory>
                 </oneof>
                 <weapondetails>
-                <OR> <!-- Shouldn't be needed but missing from weapons.xml currently -->
+                <OR> <!-- Forbid HK series because long barrel is slotless now -->
                     <name>HK Urban Combat</name>
                     <name>HK Urban Enforcer</name>
                     <name>HK Urban Fighter</name>
@@ -361,13 +361,14 @@
                 </weapondetails>
             </forbidden>
             <required amendoperation="addnode">
-                <weapondetails>
+                <weapondetails> <!--  Explicitly re-add weapons with a barrel slot -->
                     <OR>
                         <category operation="contains">Rifles</category>
                         <category operation="contains">Pistols</category>
                         <category>Shotguns</category>
                         <category operation="contains">Machine Guns</category>
                         <category>Carbines</category>
+                        <name>FN-AAL Gyrojet Pistol</name>
                     </OR>
                 </weapondetails>
             </required>
