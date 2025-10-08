@@ -272,14 +272,24 @@
         </weapon>
         <weapon> <!-- Microwave Gun, High Frequency -->
             <id>21fb8d4f-5958-4fd9-996f-7e88ee0282c2</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <allowaccessory amendoperation="remove">False</allowaccessory>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
         <weapon> <!-- Microwave Gun, Low Frequency -->
             <id>10fb69db-efd0-4f63-80a7-bda5ef0480a4</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <allowaccessory amendoperation="remove">False</allowaccessory>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
     </weapons>
