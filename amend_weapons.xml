@@ -122,6 +122,13 @@
                 <mount amendoperation="addnode">Hub Internal</mount>
             </accessorymounts>
         </weapon>
+        <weapon xpathfilter="category='Flamethrowers'">
+            <accessorymounts amendoperation="replace" addifnotfound="True">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+            </accessorymounts>
+        </weapon>
     </weapons>
     <weapons> <!-- Crossbows -->
         <weapon> <!-- Light Crossbow -->
