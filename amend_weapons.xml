@@ -308,12 +308,16 @@
             <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id>
             <mount amendoperation="replace">Hub Internal</mount> <!-- Electronic firing occupies the Internal slot -->
             <forbidden>
-                <weapondetails amendoperation="addnode">
-                    <OR> <!-- Forbid Individual weapons -->
+                <weapondetails amendoperation="addnode"> <!-- Forbid Individual weapons -->
+                    <OR> 
+                        <name>Light Crossbow</name>
+                        <name>Medium Crossbow</name>
+                        <name>Heavy Crossbow</name>
+                        <name>Ranger Sliver Pistol Crossbow</name>
                         <name>Parashield Dart Pistol</name>
-                        <name>The Ares Redline Laser Pistol</name>
-                        <name>The Narcoject Gas Gun</name>
-                        <name>The Narcoject Trackstopper</name>
+                        <name>Ares Redline</name>
+                        <name>Narcoject Gas Gun</name>
+                        <name>Narcoject Trackstopper</name>
                         <name>Ares Lancer MP Laser</name>
                         <name>Grapple Gun</name>
                         <name>Tactical Grapple Gun</name>
