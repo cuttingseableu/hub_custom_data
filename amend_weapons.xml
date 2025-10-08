@@ -40,7 +40,7 @@
 	</weapons>
 
     <!-- Chummer treats Internal slot as None, so create custom Internal mount and apply to all guns that should have one -->
-    <!-- Also apply mod slots for Individual Weapons -->
+    <!-- Also apply missing mounts for Individual Weapons -->
     <weapons> <!-- Weapon Categories -->
         <weapon xpathfilter="category='Tasers'">
             <accessorymounts>		
@@ -202,14 +202,20 @@
         </weapon>
         <weapon> <!-- Grapple Gun -->
             <id>9c267b03-103e-43f4-bfe8-986c69dc17d2</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <accessorymounts amendoperation="addnode">		
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
         <weapon> <!-- Tactical Grapple Gun -->
             <id>3a60c3ee-9f6f-46cb-be2f-bec0bccc3318</id>
-            <accessorymounts>		
-                <mount amendoperation="addnode">Hub Internal</mount>
+            <accessorymounts amendoperation="addnode">		
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+                <mount>Hub Internal</mount>
             </accessorymounts>
         </weapon>
     </weapons>
