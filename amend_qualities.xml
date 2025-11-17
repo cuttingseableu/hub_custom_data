@@ -1,38 +1,372 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--This file is part of Chummer5a.
 
-    Chummer5a is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+Chummer5a is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-    Chummer5a is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Chummer5a is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
 
-    You can obtain the full source code for Chummer5a at
-    https://github.com/chummer5a/chummer5a
+You can obtain the full source code for Chummer5a at
+https://github.com/chummer5a/chummer5a
 -->
 <chummer>
-	<qualities>
-		<quality> <!-- High Pain Tolerance -->
-			<id>b7866fb4-3747-4caf-9240-69cbdd79ce78</id>
-			<forbidden>
-				<oneof amendoperation="addnode">>
-					<quality>Panzer (BOD Intim/Pain Resistance)</quality>
-					<quality>Panzer (Fear/Pain Resistance)</quality>
-				</oneof>
-			</forbidden>
-		</quality>
-		<quality>
-			<name>Black Market Pipeline</name>
-			<chargenonly amendoperation="remove" />
-		</quality>
-<!-- Techno KC qualities released to the wild -->
+  <categories amendoperation="addnode">
+    <category>Banned Positive</category>
+    <category>Banned Negative</category>
+    <category>Blood Crystal</category>
+  </categories>
+  <qualities>
+    <quality> <!-- High Pain Tolerance -->
+      <id>b7866fb4-3747-4caf-9240-69cbdd79ce78</id>
+      <forbidden>
+        <oneof amendoperation="addnode">
+          <quality>Panzer (BOD Intim/Pain Resistance)</quality>
+          <quality>Panzer (Fear/Pain Resistance)</quality>
+        </oneof>
+      </forbidden>
+    </quality>
+    <!-- Allow BMP post-gen -->
+    <quality>
+      <name>Black Market Pipeline</name>
+      <chargenonly amendoperation="remove" />
+    </quality>
+    
+    <!-- Banned Positive Qualities -->
+    <quality>
+      <id>742caf46-a10b-4aa1-a6bc-a53feb99748c</id>
+      <name>Barehanded Adept</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>32a4d207-a67b-4cdb-a0c8-731320f85ffc</id>
+      <name>Better to be Feared than Loved</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>7d1bedb9-5d27-419f-bc15-0a39d9b67516</id>
+      <name>Candle in the Dark</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>397eee55-11eb-4ede-bede-a8a13befa21c</id>
+      <name>Community Connection</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>07f1833e-e5e0-41e1-91de-9044b2f48367</id>
+      <name>Erased</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>e07fc29c-55cc-46b3-af56-3b1de76f0a89</id>
+      <name>Friends in High Places</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>cc967d0f-6b7a-4c62-b202-37f94242169c</id>
+      <name>Groveler</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    <quality>
+      <id>999fd139-d2c7-42ba-8ff8-cd9cbe65711c</id>
+      <name>Revels in Murder</name>
+      <category amendoperation="replace">Banned Positive</category>
+    </quality>
+    
+    <!-- Banned Negative Qualities -->
+    <quality>
+      <name>Alpha Junkie</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Amnesia</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Bi-polar</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Carrier</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Code of Honor: Avenging Angel</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Code of Honor: Black Hat</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Consummate Professional</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Data Liberator</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Day Job</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Dead Emotion</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Dead SIN</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Decaying Dissonance</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Designated Omega</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Earther</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Echo Chamber</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Elevated Stress</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Emotional Attachment</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Every Man For Himself</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Faceless</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Force of Chaos</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Hung out to Dry</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Impassive</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>In Debt</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Information Auctioneer</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Latest and Greatest</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Leeroy Jenkins</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Pie Iesu Domine. Dona Eis Requiem.</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Pregnant</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Quadriplegic</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Resonant Burnout</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Stolen Gear</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>This Is Your Last Chance</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>Tough and Targeted</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <name>'Ware Intolerance</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    
+    
+    <!-- Crystal Qualities -->
+    <quality>
+      <id>c2b4f018-7b14-4e04-aab9-71c891dd0a18</id>
+      <name>Crystal Breath</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>1abbf9a5-af57-4e9f-af7a-05872ae8ddad</id>
+      <name>Crystal Eye (One Eye)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>6b669cf8-ef03-49c1-8e42-b16e0daea0bc</id>
+      <name>Crystal Eye (Two Eyes)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>82ad9ac5-5ff7-4ea6-9925-a4012af6fe50</id>
+      <name>Crystal Gut (Liver)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>40f0ec08-0948-41dc-b0a2-2804ae913936</id>
+      <name>Crystal Gut (Kidneys)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>1ca531dc-8d76-42aa-a667-874c94166f0e</id>
+      <name>Crystal Gut (Stomach)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>c3c759fd-4b38-46d9-bccc-64ceb1e0247b</id>
+      <name>Crystal Gut (Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>35e38f80-6054-4f2d-9da7-13dc8e95e923</id>
+      <name>Crystal Gut (Liver, Kidneys)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>3f17850d-5d1c-4dc3-8bb2-09614dd15862</id>
+      <name>Crystal Gut (Liver, Stomach)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>aafc734a-91f9-4b40-af9b-5f771e5dcf37</id>
+      <name>Crystal Gut (Liver, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>5d155e0a-b7fa-4047-8a50-43e9616cb354</id>
+      <name>Crystal Gut (Kidneys, Stomach)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>e3613a3d-31c9-40db-a54c-154130ddafe2</id>
+      <name>Crystal Gut (Kidneys, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>84e80b32-52b7-4fc0-a990-5a74fb5d497c</id>
+      <name>Crystal Gut (Stomach, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>d635f134-3b02-45eb-96d2-e42e100b47cc</id>
+      <name>Crystal Gut (Liver, Kidneys, Stomach)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>5093e803-da71-4d8c-acb0-22e9ecae3112</id>
+      <name>Crystal Gut (Liver, Kidneys, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>9e390ad1-a8cb-4fbd-a0bb-cf2f3b56dfc1</id>
+      <name>Crystal Gut (Liver, Stomach, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>d62eadf5-071e-4270-86c7-d4fb299ff440</id>
+      <name>Crystal Gut (Kidneys, Stomach, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>9c8e4825-507f-4683-a477-bf7d895b75b1</id>
+      <name>Crystal Gut (Liver, Kidneys, Stomach, Intestines)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>11001f88-572a-4818-97fd-e78c8bc8f619</id>
+      <name>Crystal Jaw</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>350844b9-db9f-4cce-83c3-e8965511e928</id>
+      <name>Crystal Limb (Arm)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>834b6e22-5fb3-4a44-a54e-b70729cdb87e</id>
+      <name>Crystal Limb (Leg)</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>a054e8a5-f09b-46a6-8c69-5b6b44ddd312</id>
+      <name>Crystal Spine</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>8779458a-5af9-4328-af57-4212eff304bf</id>
+      <name>Crystalline Blade</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>b4e54478-b550-4ee4-a69f-e22944b82b66</id>
+      <name>Crystalline Claws</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>256dbeb8-7bb8-4369-8c93-b8b206a859b8</id>
+      <name>Crystalline Diver</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>beb709ac-4c40-4b05-9c49-1fe26e4fa2ab</id>
+      <name>Crystalline Grace</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>9ff65ab9-7a3c-490d-ad73-789999ab60e2</id>
+      <name>Crystalline Reflexes</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>2169823c-22ab-457d-93f7-a96590ed77ff</id>
+      <name>Crystalline Shards</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <quality>
+      <id>e24b86ad-004b-4252-8383-3ca4aad53a26</id>
+      <name>Crystalline Vision</name>
+      <category amendoperation="replace">Blood Crystal</category>
+    </quality>
+    <!-- Techno KC qualities released to the wild -->
     <quality>
       <name>Hold the Door</name>
       <required>
@@ -96,7 +430,7 @@
         </oneof>
       </required>
     </quality>
-   <quality>
+    <quality>
       <name>Escaped Custody</name>
       <required>
         <allof xpathfilter="quality = 'Technomancer'" amendoperation="remove" />
@@ -117,7 +451,7 @@
     <quality>
       <name>'Ware Intolerance</name>
       <hide />
-	</quality>
+    </quality>
     <quality>
       <name>Wired User</name>
       <required>
@@ -127,6 +461,5 @@
         </oneof>
       </required>
     </quality>
-	</qualities>
+  </qualities>
 </chummer>
-
