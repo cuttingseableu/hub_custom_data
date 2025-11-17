@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file is part of Chummer5a.
+
+Chummer5a is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Chummer5a is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
+
+You can obtain the full source code for Chummer5a at
+https://github.com/chummer5a/chummer5a
+-->
+<chummer>
+  <skillgroups>
+    <name xpathfilter=". = 'Engineering'" amendoperation="remove"/>
+  </skillgroups>
+  <skills>
+    <skill>
+      <!-- Aeronautics Mechanic -->
+      <id>b52f7575-eebf-41c4-938d-df3397b5ee68</id>
+      <name amendoperation="replace">Mechanic A</name>
+      <skillgroup amendoperation="replace" />
+    </skill>
+    <skill>
+      <!-- Automotive Mechanic -->
+      <id>5e5f2f7f-f63b-4f65-a65d-91b3d4523c6f</id>
+      <name amendoperation="replace">Mechanic B</name>
+      <skillgroup amendoperation="replace" />
+    </skill>
+    <skill>
+      <!-- Industrial Mechanic -->
+      <id>935621c5-d384-42f2-a740-1fa349fa85a1</id>
+      <name amendoperation="replace">Mechanic C</name>
+      <skillgroup amendoperation="replace" />
+    </skill>
+    <skill>
+      <!-- Nautical Mechanic -->
+      <id>48cc79be-f75e-4fe6-8721-7864c9f231f6</id>
+      <name amendoperation="replace">Mechanic D</name>
+      <skillgroup amendoperation="replace" />
+    </skill>
+    <skill amendoperation="remove">
+      <name>Diving</name>
+    </skill>
+    <skill amendoperation="remove">
+      <name>Instruction</name>
+    </skill>
+    <skill amendoperation="remove">
+      <name>Free-Fall</name>
+    </skill>
+    <skill>
+      <name>Palming</name>
+      <default amendoperation="replace">True</default>
+    </skill>
+  </skills>
+</chummer>
