@@ -55,5 +55,9 @@ https://github.com/chummer5a/chummer5a
     <skill amendoperation="remove">
       <name>Free-Fall</name>
     </skill>
+    <skill>
+      <name>Palming</name>
+      <default amendoperation="replace">True</default>
+    </skill>
   </skills>
 </chummer>
