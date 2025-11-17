@@ -22,6 +22,8 @@ https://github.com/chummer5a/chummer5a
     <category>Banned Positive</category>
     <category>Banned Negative</category>
     <category>Blood Crystal</category>
+    <category>Special Characters</category>
+    <category>Focused Awakened</category>
   </categories>
   <qualities>
     <quality> <!-- High Pain Tolerance -->
@@ -87,15 +89,27 @@ https://github.com/chummer5a/chummer5a
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Amnesia</name>
+      <id>1209249d-4600-46a7-833c-87d14f719b5e</id>
+      <name>Amnesia (Surface Loss)</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Bi-polar</name>
+      <id>1f03322a-ef16-4495-9bdb-824006c41aad</id>
+      <name>Amnesia (Neural Deletion)</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Carrier</name>
+      <name>Bi-Polar</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <id>8fa3b253-1e6f-439d-940e-f48a1d8959c8</id>
+      <name>Carrier (HMHVV Strain II)</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <id>3fc02bdc-1f3f-448c-8e8c-d1869ac4fcfc</id>
+      <name>Carrier (HMHVV Strain III)</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
@@ -115,7 +129,18 @@ https://github.com/chummer5a/chummer5a
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Day Job</name>
+      <id>8fc3e769-ea71-41e1-968c-600d507cdf94</id>
+      <name>Day Job (10 hrs)</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <id>4294e480-4299-41e5-9336-50a98ec14bbf</id>
+      <name>Day Job (20 hrs)</name>
+      <category amendoperation="replace">Banned Negative</category>
+    </quality>
+    <quality>
+      <id>12b6f08b-5513-4dfd-840d-fd43595d15b8</id>
+      <name>Day Job (40 hrs)</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
@@ -163,7 +188,7 @@ https://github.com/chummer5a/chummer5a
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Hung out to Dry</name>
+      <name>Hung Out to Dry</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
@@ -183,7 +208,7 @@ https://github.com/chummer5a/chummer5a
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
-      <name>Leeroy Jenkins</name>
+      <name>Leeeeeeeroy Jenkins</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
     <quality>
@@ -218,8 +243,6 @@ https://github.com/chummer5a/chummer5a
       <name>'Ware Intolerance</name>
       <category amendoperation="replace">Banned Negative</category>
     </quality>
-    
-    
     <!-- Crystal Qualities -->
     <quality>
       <id>c2b4f018-7b14-4e04-aab9-71c891dd0a18</id>
@@ -366,6 +389,199 @@ https://github.com/chummer5a/chummer5a
       <name>Crystalline Vision</name>
       <category amendoperation="replace">Blood Crystal</category>
     </quality>
+    <!-- Special Character Qualities -->
+    <quality>
+      <id>3ea0d4dd-5ed7-4ab0-817f-68d7d67ab3d1</id>
+      <name>Changeling (Class I SURGE)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>bb16aae9-b511-47b2-93c4-217918346cc8</id>
+      <name>Changeling (Class II SURGE)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>9baa5b9d-e96c-466d-b0b4-dd789a6c0f83</id>
+      <name>Changeling (Class III SURGE)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>e132257f-14d8-4e5a-9f20-ae6af29649d5</id>
+      <name>Latent Dracomorphosis</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>3a8006d6-72c2-4655-9200-45ec21cad760</id>
+      <name>Dracoform (Eastern Drake)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>f257ce85-fc27-4fa1-8d34-6eb4102e7614</id>
+      <name>Dracoform (Western Drake)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>90a7cc01-ee0f-4d60-aeb9-05752e68ddf9</id>
+      <name>Dracoform (Feathered Drake)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>c284e172-1d20-4844-b24c-e094d2588b72</id>
+      <name>Dracoform (Sea Drake)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>65026e10-6fa5-49a4-9da6-d9575b5b9cde</id>
+      <name>Infected: Bandersnatch</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>0a3f2c4f-efdc-422f-91bf-07baf2229bc6</id>
+      <name>Infected: Banshee</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>6556d48f-2cbd-4bc6-a2c8-e9fe3f99ac7e</id>
+      <name>Infected: Dzoo-Noo-Qua</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>fe01a71d-50c2-4ba3-9604-54af663ae8af</id>
+      <name>Infected: Fomoraig</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>ed801fa4-0514-458a-b850-9eeddf0c2fed</id>
+      <name>Infected: Ghoul (Dwarf)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>e156dc45-66ca-4b45-baf8-5c875b9866c4</id>
+      <name>Infected: Ghoul (Elf)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>2d99bbb6-7af0-45c6-a83b-46d9d9f10838</id>
+      <name>Infected: Ghoul (Human)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>ea7c269f-6843-488a-b0fa-8f79c935f568</id>
+      <name>Infected: Ghoul (Ork)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>8325c7f3-c578-458a-9068-e159b2c686ef</id>
+      <name>Infected: Ghoul (Sasquatch)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>92123580-1f4f-4c6a-b2f5-3b9c9031d705</id>
+      <name>Infected: Ghoul (Troll)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>5f31925d-cc76-49da-acab-644b66d5e93d</id>
+      <name>Infected: Gnawer</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>ae5e7ba4-5b9e-40f9-8ace-66f19c6e11eb</id>
+      <name>Infected: Goblin</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>ba87adfa-6c7e-4c9b-bf13-b6576b59bd1f</id>
+      <name>Infected: Grendel</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>8e3d558a-b69a-4176-a130-1ec3465aa809</id>
+      <name>Infected: Harvester</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>fe0c2ae0-fc0f-40fe-9bae-1c3ad5c7e29a</id>
+      <name>Infected: Loup-Garou</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>818bfd22-7dec-4e50-8189-7fed09fbcfed</id>
+      <name>Infected: Mutaqua</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>39a8e176-ddbf-470e-84a0-ba25ccd92ca0</id>
+      <name>Infected: Nosferatu</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>7d0a1679-846a-4cf2-b8b5-b5c686766a90</id>
+      <name>Infected: Vampire (Human)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>4024b100-c762-4354-95e4-db5cb0694a9a</id>
+      <name>Infected: Vampire (Non-Human)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>3c746778-bec5-4b9b-a1a4-62ac6eb98342</id>
+      <name>Infected: Sukuyan (Human)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>735aee59-2236-43e4-b618-9b9923513597</id>
+      <name>Infected: Sukuyan (Non-Human)</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>652948f9-e629-4dea-bd13-776dd41ca6a1</id>
+      <name>Infected: Wendigo</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <quality>
+      <id>08c4dfad-3661-48d9-a265-43cce84e20d8</id>
+      <name>Prototype Transhuman</name>
+      <category amendoperation="replace">Special Characters</category>
+    </quality>
+    <!-- Focused Awakened -->
+    <quality>
+      <id>4d5e0fd2-dab3-4de0-9756-096a748bb3cc</id>
+      <name>Elementalist (Air)</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>de428f71-12d1-4c21-98c5-1b3f86da5ba2</id>
+      <name>Elementalist (Earth)</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>d426f03d-6a3e-4696-a977-a49fb93be9aa</id>
+      <name>Elementalist (Fire)</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>c9c20750-894a-42b8-8119-0e12484698d4</id>
+      <name>Elementalist (Water)</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>d03a9696-2341-4894-8cf2-0537c4e74af2</id>
+      <name>Hedge Witch/Wizard</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>90691f29-5b81-4a81-9ebc-21f2f5da1d55</id>
+      <name>Seer</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    <quality>
+      <id>ecb5ab50-68c9-45ee-9fb4-c2f0b3051096</id>
+      <name>Null Wizard</name>
+      <category amendoperation="replace">Focused Awakened</category>
+    </quality>
+    
     <!-- Techno KC qualities released to the wild -->
     <quality>
       <name>Hold the Door</name>
