@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file is part of Chummer5a.
+
+    Chummer5a is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Chummer5a is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
+
+    You can obtain the full source code for Chummer5a at
+    https://github.com/chummer5a/chummer5a
+-->
+
+<chummer>
+    <!-- Blah blah cyberweaponizes stuff for WotS. -->
+	<weapons>
+		<weapon>
+			<id>fe835c72-a973-4976-bf5f-751aff1371d4</id> <!-- spurs -->
+			<category>Cyberweapon</category>
+		</weapon>
+		<weapon>
+			      <id>16fe95d3-9c66-4ac6-b4e3-562de5e5619e</id>  <!-- hand razors -->
+			<category>Cyberweapon</category>
+		</weapon>
+		<weapon>
+			<id>5ec246dc-c129-4e61-a27a-c4d82b223bea</id>  <!-- hand blades -->
+			<category>Cyberweapon</category>
+		</weapon>
+		<weapon>
+			<id>fec4a4f8-4432-4bdc-b3b9-83c032d71d63</id>  <!-- shock hand -->
+			<category>Cyberweapon</category>
+		</weapon>		
+	</weapons>
+
+    <!-- Chummer treats Internal slot as None, so create custom Internal mount and apply to all guns that should have one -->
+    <!-- Also apply missing mounts for Individual Weapons -->
+    <weapons> <!-- Weapon Categories -->
+        <weapon xpathfilter="category='Flamethrowers'">
+            <accessorymounts amendoperation="replace" addifnotfound="True">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+            </accessorymounts>
+        </weapon>
+    </weapons>
+    <weapons> <!-- Crossbows -->
+        <weapon> <!-- Light Crossbow -->
+            <id>bc9db3ec-6fa2-407d-ad76-e49daac3c06f</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Medium Crossbow -->
+            <id>0df17331-7631-4f78-b857-0f3929678db2</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Heavy Crossbow -->
+            <id>db213a06-0430-4711-81a3-5790d5152ba3</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Ranger Sliver Pistol Crossbow -->
+            <id>28072a3f-5153-444e-83e3-46129b9ff572</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+            </accessorymounts>
+        </weapon>
+    </weapons>
+    <weapons> <!-- Pistol Sized Individual Ranged Weapons -->
+        <weapon> <!-- FN-AAL Gyrojet Pistol -->
+            <id>a836fc0b-a1e1-491d-ad8d-7f803c88acdc</id>
+            <accessorymounts>		
+                <mount amendoperation="addnode">Barrel</mount>
+            </accessorymounts>
+        </weapon>
+    </weapons>
+    <weapons> <!-- Submachine Gun Sized Individual Ranged Weapons -->    
+        <weapon> <!-- Grapple Gun -->
+            <id>9c267b03-103e-43f4-bfe8-986c69dc17d2</id>
+            <accessorymounts amendoperation="addnode">		
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Tactical Grapple Gun -->
+            <id>3a60c3ee-9f6f-46cb-be2f-bec0bccc3318</id>
+            <accessorymounts amendoperation="addnode">		
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+    </weapons>
+    <weapons> <!-- Assault Rifle Sized Individual Ranged Weapons --> 
+        <weapon> <!-- Aquadyne Shark-XS Harpoon Gun -->
+            <id>a20f44a1-ced0-4018-9522-8a0e7234c29d</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Standard Harpoon Gun -->
+            <id>d50f0212-490b-44ca-8365-09e62ea69697</id>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Microwave Gun, High Frequency -->
+            <id>21fb8d4f-5958-4fd9-996f-7e88ee0282c2</id>
+            <cost amendoperation="replace">10000</cost>
+            <allowaccessory amendoperation="remove">False</allowaccessory>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Microwave Gun, Low Frequency -->
+            <id>10fb69db-efd0-4f63-80a7-bda5ef0480a4</id>
+            <cost amendoperation="replace">10000</cost>
+            <damage amendoperation="replace">10(M)</damage> <!-- Original: 10P -->
+            <allowaccessory amendoperation="remove">False</allowaccessory>
+            <accessorymounts amendoperation="addnode">
+                <mount>Top</mount>
+                <mount>Side</mount>
+                <mount>Under</mount>
+                <mount>Stock</mount>
+            </accessorymounts>
+        </weapon>
+        <weapon> <!-- Repeating Laser -->
+            <id>bb17f788-f4d2-4a32-a758-2ed47a1beb63</id>
+            <cost amendoperation="replace">27000</cost>
+            <damage amendoperation="replace">10P</damage> <!-- Original: 7P -->
+        </weapon>
+        <weapon> <!-- Ares Redline (Laser pistol, SMG ranges) -->
+            <id>78293136-5bd0-49ac-aa9b-7c291f94c7a4</id>
+            <damage amendoperation="replace">8P</damage> <!-- Original: 5P -->
+        </weapon>
+        <weapon> <!-- Ares Lancer MP Laser -->
+            <id>d6c4ff4a-5fbb-4885-9220-a784e2bff4f4</id>
+            <damage amendoperation="replace">10P</damage> <!-- Original: 7P -->
+        </weapon>
+        <weapon> <!-- Ares Archon Heavy MP Laser (Sniper Rifle) -->
+            <id>df5d5c83-ddf8-4ec2-8a6f-28c61ec7325a</id>
+            <damage amendoperation="replace">13P</damage> <!-- Original: 10P -->
+        </weapon>
+        <weapon> <!-- Ares Armatus (Laser Shotgun) -->
+            <id>176ab92a-0c00-48fe-a994-668903407fbf</id>
+            <damage amendoperation="replace">9P</damage> <!-- Original: 6P -->
+        </weapon>
+        <weapon> <!-- Underbarrel Laser -->
+            <id>fafa3c46-6ced-4cbd-b236-2c5abbae141e</id>
+            <damage amendoperation="replace">8P</damage> <!-- Original: 5P -->
+        </weapon>
+    </weapons>
+    <!-- <weapons> Sniper Sized Individual Ranged Weapons -->
+    <!-- Keep this commented until the category is populated -->
+    <!-- </weapons> -->
+
+    <!-- House Rules for accessory slots -->
+    <accessories>
+        <accessory> <!-- Ammo Skip System takes only an Internal slot -->
+            <id>0c315fd8-3a1a-4748-8359-cb6a04436fbd</id>
+            <mount amendoperation="replace">Internal</mount>
+        </accessory>
+        <accessory> <!-- Electronic Firing needs to use Internal slot and can't be used with certain weapons -->
+            <id>2da4f104-cf0c-4e0c-a001-4a6da4c2b46b</id>
+            <mount amendoperation="replace">Internal</mount> <!-- Electronic firing occupies the Internal slot -->
+            <forbidden>
+                <weapondetails amendoperation="addnode"> <!-- Forbid Individual weapons -->
+                    <OR> 
+                        <name>Light Crossbow</name>
+                        <name>Medium Crossbow</name>
+                        <name>Heavy Crossbow</name>
+                        <name>Ranger Sliver Pistol Crossbow</name>
+                        <name>Parashield Dart Pistol</name>
+                        <name>Ares Redline</name>
+                        <name>Narcoject Gas Gun</name>
+                        <name>Narcoject Trackstopper</name>
+                        <name>Ares Lancer MP Laser</name>
+                        <name>Grapple Gun</name>
+                        <name>Tactical Grapple Gun</name>
+                        <name>Ares S-III Super Squirt</name>
+                        <name>Fichetti Pain Inducer</name>
+                        <name>Aquadyne Shark-XS Harpoon Gun</name>
+                        <name>Standard Harpoon Gun</name>
+                        <name>Ares Armatus</name>
+                        <name>Ares Screech Sonic Rifle</name>
+                        <name>Repeating Laser</name>
+                        <name>Microwave Gun, High Frequency</name>
+                        <name>Microwave Gun, Low Frequency</name>
+                        <name>Parashield Dart Rifle</name>
+                        <name>Ares Archon Heavy MP Laser</name>
+                        <name>Ares Thunderstruck Gauss Rifle</name>
+                    </OR>
+                </weapondetails>
+            </forbidden>
+        </accessory>
+        <accessory> <!--  Long Barrel modification takes up no slots -->
+            <id>d5abeadd-fba4-47f9-ac35-bfbb31ce34be</id> 
+            <mount amendoperation="replace"></mount>
+            <forbidden amendoperation="addnode">
+                <oneof> <!-- Forbid Shortbarrel and Stock Removal because they are mutex -->
+                <accessory>Sawed Off/Shortbarrel</accessory>
+                <accessory>Sawed Off/Shortbarrel and Stock Removal</accessory>
+                </oneof>
+                <weapondetails>
+                <OR> <!-- Forbid HK series because long barrel is slotless now -->
+                    <name>HK Urban Combat</name>
+                    <name>HK Urban Enforcer</name>
+                    <name>HK Urban Fighter</name>
+                    <name>HK Urban Assassin</name>
+                </OR>
+                </weapondetails>
+            </forbidden>
+            <required amendoperation="addnode">
+                <weapondetails> <!--  Explicitly re-add weapons with a barrel slot -->
+                    <OR>
+                        <category operation="contains">Rifles</category>
+                        <category operation="contains">Pistols</category>
+                        <category>Shotguns</category>
+                        <category operation="contains">Machine Guns</category>
+                        <category>Carbines</category>
+                        <name>FN-AAL Gyrojet Pistol</name>
+                    </OR>
+                </weapondetails>
+            </required>
+        </accessory>
+        <accessory> <!-- Shotguns may be modified with Suppressors -->
+            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id>
+            <forbidden>
+                <weapondetails>
+                <OR>
+                    <ammocategory amendoperation="remove">Shotguns</ammocategory>
+                    <category amendoperation="remove">Shotguns</category>
+                    <spec amendoperation="remove">Shotguns</spec>
+                    <spec2 amendoperation="remove">Shotguns</spec2>
+                </OR>
+                </weapondetails>
+            </forbidden>
+        </accessory>
+        <accessory> <!-- Ban Gyroget Pistol from having Suppressor-->
+            <id>0da6149e-982f-4051-825b-52c1b79c7e52</id>
+            <forbidden>
+                <weapondetails>
+                    <OR>
+                        <name amendoperation="addnode">FN-AAL Gyrojet Pistol</name>
+                    </OR>
+                </weapondetails>
+            </forbidden>
+        </accessory>
+    </accessories>
+</chummer>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file is part of Chummer5a.
+
+    Chummer5a is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Chummer5a is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
+
+    You can obtain the full source code for Chummer5a at
+    https://github.com/chummer5a/chummer5a
+-->
+<chummer>
+	<cyberwares>
+		<cyberware>
+			<id>63a08af1-14ea-4922-9d57-4afab13f136b</id>
+			<name>Active Control Rig</name>
+			<category>Headware</category>
+			<ess>Rating * 0.8</ess>
+			<capacity>0</capacity>
+			<avail>(Rating * 6)R</avail>
+			<cost>25000 * Rating</cost>
+			<source>SR5</source>
+			<page>452</page>
+			<minrating>1</minrating>
+			<rating>2</rating>
+		</cyberware>
+	</cyberwares>
+</chummer>
