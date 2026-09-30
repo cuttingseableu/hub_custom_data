@@ -330,5 +330,14 @@
         	</parentdetails>
 		</required>
 	</cyberware>
+	  	<cyberware>
+	<!-- Cybergun Laser Sight -->
+	<id>c8df9efc-e88e-4dec-becf-0453f20cdb34</id>
+		<required>
+    		<parentdetails>
+          		<category>Cybergun</category>
+        	</parentdetails>
+		</required>
+	</cyberware>
   </cyberwares>
 </chummer>
