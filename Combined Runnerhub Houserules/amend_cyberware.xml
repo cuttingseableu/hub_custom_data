@@ -312,5 +312,23 @@
 		  <capacity>[2]</capacity>
 		  <limit>{leg}</limit>
 	</cyberware>
+	  	<cyberware>
+	<!-- External Clip Port -->
+	<id>ec5ed166-d1dc-4afe-80a1-71bc315f7d75</id>
+		<required>
+    		<parentdetails>
+          		<category>Cybergun</category>
+        	</parentdetails>
+		</required>
+	</cyberware>
+	<cyberware>
+	<!-- Cybergun Silencer -->
+	<id>8b9541a9-e10a-488d-a076-4e5b1c469839</id>
+		<required>
+    		<parentdetails>
+          		<category>Cybergun</category>
+        	</parentdetails>
+		</required>
+	</cyberware>
   </cyberwares>
 </chummer>
