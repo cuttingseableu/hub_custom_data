@@ -127,6 +127,14 @@
         </oneof>
       </required>
     </quality>
-	</qualities>
+	<quality>
+		<id>cd712655-a83b-4905-923d-be07ced1677b</id> <!-- Revenant Adept -->
+		<required>
+			<oneof>
+				<metatypecategory amendoperation="addnode">Shapeshifter</metatypecategory>
+			</oneof>
+		</required>
+	</quality>
+</qualities>
 </chummer>
 
